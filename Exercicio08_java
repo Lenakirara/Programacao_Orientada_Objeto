@@ -1,0 +1,39 @@
+package lista1poo;
+import java.util.Scanner;
+
+public class Exercicio8Poo {
+    public static void main(String[] args){
+        Scanner entrada = new Scanner(System.in);
+        
+        String corDoCarro = "prata";
+        String anoDoCarro = "2018";
+        String marcaCarro = "Civic";
+        String modeloCarro = "Honda";
+        String escolha;
+        
+        System.out.println("Digite '1' para ver a cor do carro");
+        System.out.println("Digite '2' para ver ano do carro");
+        System.out.println("Digite '3' para ver marca do carro");
+        System.out.println("Digite '4' para ver modelo do carro");
+        escolha = entrada.next();
+        
+        switch (escolha){
+            case "1":
+                System.out.println("Cor do carro: "+ corDoCarro);
+                break;
+                
+            case "2":
+                System.out.println("Ano do carro: "+ anoDoCarro);
+                break;
+            
+            case "3":
+                System.out.println("Marca do carro: "+ marcaCarro);
+                break;
+                
+            case "4":
+                System.out.println("Modelo do carro: "+ modeloCarro);
+                break;
+        }
+    }
+    
+}
