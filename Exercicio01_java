@@ -1,0 +1,34 @@
+package lista1poo;
+import java.util.Scanner;
+
+public class Lista1Poo {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);                
+
+        String nomeFuncionario;
+        int idadeFuncionario;
+        String nomeMae;
+        float valorSalario;
+        
+        
+        System.out.println("Digite nome do funcionario: ");
+        nomeFuncionario = entrada.nextLine();
+        
+        System.out.println("Digite idade do funcionario: ");
+        idadeFuncionario = entrada.nextInt();
+        
+        System.out.println("Digite nome da mãe do funcionario: ");
+        nomeMae = entrada.next();
+        
+        System.out.println("Digite salario do funcionario: ");
+        valorSalario = entrada.nextFloat();
+        
+        System.out.println("Nome funcionário: " + nomeFuncionario);
+        System.out.println("Idade funcionario: " + idadeFuncionario);
+        System.out.println("Nome da mãe: " + nomeMae);
+        System.out.printf("Salario: R$ %.2f", valorSalario);              
+        // TODO code application logic here
+    }
+    
+}
