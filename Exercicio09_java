@@ -1,0 +1,60 @@
+package lista1poo;
+
+import java.util.Scanner;
+
+public class Exercicio9Poo {
+    public static void main(String[] args){
+        Scanner entrada = new Scanner(System.in);
+        
+        String nomeDoFilme = "";
+        float precoLocacao = 0;
+        int quantExemplares = 0;
+        int avaliacaoFilme = 0;
+        String tipoDeFilme = "";
+        String escolha = "";
+        
+        while (!escolha.equals("0")){
+            System.out.println("Para cadastrar nome do filme - Digite '1':");
+            System.out.println("Para cadastrar preço de locação do filme - Digite '2':");
+            System.out.println("Para cadastrar quantidade de exemplares locados - Digite '3':");
+            System.out.println("Para cadastrar avaliação do filme - Digite '4':");
+            System.out.println("Para cadastrar tipo de filme - Digite '5':");
+            System.out.println("Digite '0' para sair");
+            escolha = entrada.next();
+        
+        
+        switch (escolha){
+            case "1":
+                System.out.println("Digite o nome do filme: ");
+                nomeDoFilme = entrada.next();
+                break;
+                
+            case "2":
+                System.out.println("Digite o valor de locação do filme: ");
+                precoLocacao = entrada.nextFloat();
+                break;
+                
+            case "3":
+                System.out.println("Digite a quantidade de exemplares: ");
+                quantExemplares = entrada.nextInt();
+                break;
+                
+            case "4":
+                System.out.println("Digite a avaliação do filme:");
+                avaliacaoFilme = entrada.nextInt();
+                break;
+                
+            case "5":
+                System.out.println("Digite o tipo de filme:");
+                tipoDeFilme = entrada.next();
+                break;
+        }
+    }
+        System.out.println("Nome do livro: "+ nomeDoFilme);
+        System.out.println("Valor de Locação do livro:"+ precoLocacao);
+        System.out.println("Quantidade de exemplares:"+ quantExemplares);
+        System.out.println("Avaliação do filme:"+ avaliacaoFilme);
+        System.out.println("Tipo de filme:"+ tipoDeFilme);
+    }       
+          
+}
