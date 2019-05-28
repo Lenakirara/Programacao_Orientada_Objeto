@@ -1,0 +1,47 @@
+package lista1poo;
+import java.util.Scanner;
+
+public class Exercicio7Poo {
+    public static void main(String[] args){
+        Scanner entrada = new Scanner(System.in);
+        
+        int num1;
+        int num2;
+        int resultado1;
+        float resultado2;
+        char operacao;
+                
+        
+        System.out.println("Digite a operação desejada: '1'=soma, '2'=subtração, '3'=multiplicação e '4'=divisão");
+        operacao = entrada.next().charAt(0);
+        
+        System.out.println("Digite o primeiro numero: ");
+        num1 = entrada.nextInt();
+        
+        System.out.println("Digite o segundo numero: ");
+        num2 = entrada.nextInt();
+    
+        
+        if (operacao == '1'){
+            resultado1 = num1 + num2;
+            System.out.println("O resultado da soma é: "+ resultado1);            
+        }   
+        if (operacao == '2'){
+            resultado1 = num1 - num2;
+            System.out.println("O resultado da subtração é: "+ resultado1);
+            
+        }
+        if (operacao == '3'){
+            resultado1 = num1 * num2;
+            System.out.println("O resultado da multiplicação é: "+ resultado1);
+        }
+        if (operacao == '4'){
+            resultado1 = num1 / num2;
+            System.out.println("O resultado da divisão é: "+ resultado1);  
+            resultado2 = num1 % num2;
+            System.out.println("Resultado do resro da divisão: "+ resultado2);
+  
+        }
+     
+    }
+}
